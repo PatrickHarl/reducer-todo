@@ -76,10 +76,12 @@ export const TodoForm = () => {
         </div>
         <form className='form'>
             <div>
-                <input placeholder='...todo' onChange={handleChanges} type='text' name='todo' value={newItem} />
-                <input placeholder='...tags' onChange={handleChanges} type='text' name='tags' value={tags} />
-                <button onClick={addToList}>Add ToDo</button>
-                <button onClick={clearCompleted}>Clear Completed</button>
+                <input className='input' placeholder='...todo' onChange={handleChanges} type='text' name='todo' value={newItem} />
+                <input className='input' placeholder='...tags' onChange={handleChanges} type='text' name='tags' value={tags} />
+                <div>
+                    <button className='btn' onClick={addToList}>Add ToDo</button>
+                    <button className='btn' onClick={clearCompleted}>Clear Completed</button>
+                </div>
             </div>
         </form>
         </div>
